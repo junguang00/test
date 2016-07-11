@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FCFCFB"
+        android:src="@drawable/logintitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:text="+86" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/zhuce_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:hint="请输入手机号" />
+	<LinearLayout 
+	    android:layout_marginTop="20dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    >
+	    <EditText 
+	        android:layout_width="180dp"
+	        android:layout_height="50dp"
+	        android:background="#ffffff"
+	        android:hint="请输入手机验证码"
+	        android:gravity="center"
+	        />
+	    <Button
+	        android:id="@+id/zhece_yanzhengma"
+	        android:onClick="yanZhengOnClick"
+	        android:layout_marginLeft="20dp" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:background="#88B83D"
+	        android:text="获取验证码"
+	        />
+	</LinearLayout>
+	<Button 
+	    android:layout_marginTop="20dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:gravity="center"
+	    android:text="注册"
+	    android:background="#88B83D"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="注册表示你同意"
+	    />
+	<CheckBox 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="通过通讯录找到正在玩微博的朋友"
+	  
+	    />
+	<LinearLayout 
+	    android:layout_marginTop="20dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    >
+	    <TextView 
+	        android:layout_marginLeft="60dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="邮箱注册"
+	        android:textColor="#0000ff"
+	        android:textSize="20sp"
+	        />
+	    <TextView
+	        android:layout_marginLeft="10dp" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="|"
+	         android:textSize="20sp"
+	        />
+	    <TextView 
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="QQ注册"
+	        android:textColor="#0000ff"
+	         android:textSize="20sp"
+	        />
+	</LinearLayout>
+</LinearLayout>
